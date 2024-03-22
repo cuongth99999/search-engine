@@ -434,6 +434,8 @@
   }
 }
 
+
+
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
   .wide {
@@ -587,5 +589,52 @@
 
   .wide .l-o-11 {
     margin-left: 91.66667%;
+  }
+}
+/* Điều chỉnh header cho các thiết bị có kích thước màn hình nhỏ */
+@media (max-width: 739px) {
+  .header-container {
+    margin: 0 4px; /* Thay đổi margin cho header container */
+  }
+  
+  .header__logo {
+    width: 150px; /* Thay đổi kích thước logo cho kích thước nhỏ hơn */
+  }
+  
+  .header__menu-link {
+    font-size: 16px; /* Thay đổi cỡ chữ của các liên kết trong menu */
+  }
+  .search__content-title-text {
+    font-size: 24px; /* Giảm kích thước font */
+    margin-bottom: 10px; /* Giảm margin-bottom */
+  }
+  .header__search-btn {
+    padding: 8px 12px; /* Giảm padding của nút tìm kiếm */
+  }
+}
+
+/* Điều chỉnh layout cho màn hình tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .search__container {
+    margin-top: 70px; /* Điều chỉnh khoảng cách top cho container của search */
+  }
+  
+  .search__content-title-text {
+    font-size: 24px; /* Thay đổi cỡ chữ cho tiêu đề của nội dung tìm kiếm */
+  }
+}
+
+/* Điều chỉnh layout cho màn hình máy tính */
+@media (min-width: 1024px) {
+  .header__search-input {
+    padding: 12px; /* Thay đổi padding cho input trong phần tìm kiếm */
+  }
+  
+  .header__search-btn {
+    padding: 12px 20px; /* Thay đổi padding cho nút tìm kiếm */
+  }
+  
+  .footer_list {
+    justify-content: space-around; /* Cân giữa các mục trong footer */
   }
 }
